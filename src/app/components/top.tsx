@@ -10,7 +10,6 @@ export default function Top() {
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-b from-transparent to-gray-800 items-center justify-center">
       <div className="">
-        
         <h1 className="text-4xl text-sky-50 text-center">
           Find <span className="font-bold">Great Products</span> <br /> &
           <span className="font-bold">Credible Vendors</span>
@@ -21,7 +20,7 @@ export default function Top() {
       <div className="">
         <div className="w-screen flex pt-4">
           <input
-            className="bg-sky-50 w-full text-gray-600 p-2 mt-5 rounded-sm"
+            className="bg-sky-50 w-full text-gray-600 p-2 mt-5 rounded-l-sm"
             type="text"
             placeholder="Search Products"
           />
