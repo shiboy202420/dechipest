@@ -7,7 +7,7 @@ export default function Home() {
     <div className="">
       <Navbar />
       <Top />
-      <div className="mx-4 my-4 pt-4 pb-1 bg-white shadow-lg rounded-lg">
+      <div className="mx-4 my-8 pt-4 pb-1 bg-white shadow-2xl rounded-lg">
         <h1 className="mb-6 mx-12">Brands:</h1>
         <div className="grid grid-cols-1">
           {Array.isArray(ImageData) && ImageData.length > 0 ? (
