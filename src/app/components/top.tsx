@@ -30,23 +30,28 @@ export default function Top() {
           >
             {selected}
           </button>
-          
         </div>
-        <div className="w-screen flex flex-col">
-          <input
-            className="bg-sky-50 text-gray-600 w-full p-2 mt-5 rounded-sm"
-            type="text"
-            placeholder="Location"
-          />
-        </div>
-        <button className="mt-5 p-2 bg-amber-100 w-full rounded-2xl text-gray-800">Search</button>
+        <input
+          className="bg-sky-50 text-gray-600 w-full p-2 mt-5 rounded-sm"
+          type="text"
+          placeholder="Location"
+        />
+        <input
+          className="bg-sky-50 text-gray-600 w-full p-2 mt-5 rounded-sm"
+          type="text"
+          placeholder="Select a Category"
+        />
+        <button className="mt-5 p-2 bg-amber-100 w-full rounded-2xl text-gray-800">
+          Search
+        </button>
       </div>
-        <div className="space-x-15 mt-10 text-amber-50">
-          <button className="bg-red-600 p-2 rounded-sm">Start Buying</button>
-          <button className="bg-red-600 p-2 rounded-sm">Find a Service</button>
-        </div>
-        <button className="bg-red-600 text-amber-50 p-2 mt-4 rounded-sm">Become a Vendor</button>
-      
+      <div className="space-x-15 mt-10 text-amber-50">
+        <button className="bg-red-600 p-2 rounded-sm">Start Buying</button>
+        <button className="bg-red-600 p-2 rounded-sm">Find a Service</button>
+      </div>
+      <button className="bg-red-600 text-amber-50 p-2 mt-4 rounded-sm">
+        Become a Vendor
+      </button>
     </div>
   );
 }
