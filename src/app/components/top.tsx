@@ -8,7 +8,7 @@ export default function Top() {
   const option1 = ["Product", "Vendor"];
 
   return (
-    <div className="flex flex-col min-h-screen bg-gradient-to-b from-transparent to-gray-800 items-center justify-center">
+    <div className="flex flex-col min-h-screen bg-gradient-to-b from-gray-300 to-gray-900 items-center justify-center">
       <div className="">
         <h1 className="text-4xl text-sky-50 text-center">
           Find <span className="font-bold">Great Products</span> <br /> &
@@ -39,7 +39,14 @@ export default function Top() {
             placeholder="Location"
           />
         </div>
+        <button className="mt-5 p-2 bg-amber-100 w-full rounded-2xl text-gray-800">Search</button>
       </div>
+        <div className="space-x-15 mt-10 text-amber-50">
+          <button className="bg-red-600 p-2 rounded-sm">Start Buying</button>
+          <button className="bg-red-600 p-2 rounded-sm">Find a Service</button>
+        </div>
+        <button className="bg-red-600 text-amber-50 p-2 mt-4 rounded-sm">Become a Vendor</button>
+      
     </div>
   );
 }
