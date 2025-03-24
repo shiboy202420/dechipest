@@ -30,7 +30,7 @@ export default function Home() {
         </div>
       </div>
       <div className="bg-gray-200 text-gray-800">
-        <h1 className="text-4xl px-8 pt-8 pb-40">
+        <h1 className="text-4xl px-8 pt-8 pb-30">
           BEST DEALS <br />
           IN NIGERIA <br />
           <span className="font-bold text-lg">
@@ -38,6 +38,7 @@ export default function Home() {
           </span>
         </h1>
       </div>
+      <div className=""></div>
     </div>
   );
 }
