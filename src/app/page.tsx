@@ -1,5 +1,6 @@
 import Navbar from "./components/navbar";
 import Top from "./components/top";
+import Footer from "./components/footer";
 import ImageData from "@/data/ImageData";
 
 export default function Home() {
@@ -38,7 +39,9 @@ export default function Home() {
           </span>
         </h1>
       </div>
-      <div className=""></div>
+      <div className="">
+        <h1></h1>
+      </div>
     </div>
   );
 }
