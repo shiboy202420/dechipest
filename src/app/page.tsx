@@ -1,7 +1,15 @@
 import Navbar from "./components/navbar";
 import Top from "./components/top";
-import Footer from "./components/footer";
-import ImageData from "@/data/ImageData";
+import imageData from "@/data/ImageData.json";
+import Link from "next/link";
+
+type ImageData = {
+  id: number;
+  imageSrc: string;
+  title: string;
+  description: string;
+  link: string;
+};
 
 export default function Home() {
   return (
@@ -11,23 +19,19 @@ export default function Home() {
       <div className="mx-4 my-8 pt-4 pb-1 bg-white shadow-2xl rounded-lg">
         <h1 className="mb-6 mx-12">Brands:</h1>
         <div className="grid grid-cols-1">
-          {Array.isArray(ImageData) && ImageData.length > 0 ? (
-            ImageData.map((image) => (
-              <div className="bg-white overflow-hidden " key={image.id}>
-                <img
-                  src={image.imageSrc}
-                  alt={image.title}
-                  className="w-full h-24 object-cover"
-                />
-                <div className="p-4 m-12">
-                  <h2 className="text-xl font-semibold">{image.title}</h2>
-                  <p className="text-blue-800 py-6">{image.description}</p>
-                </div>
+          {(imageData as ImageData[]).map((image, id) => (
+            <div className="bg-white overflow-hidden " key={id}>
+              <img
+                src={image.imageSrc}
+                alt={image.title}
+                className="w-full h-24 object-cover"
+              />
+              <div className="p-4 m-12">
+                <h2 className="text-xl font-semibold">{image.title}</h2>
+                <p className="text-blue-800 py-6">{image.description}</p>
               </div>
-            ))
-          ) : (
-            <p>No images available</p>
-          )}
+            </div>
+          ))}
         </div>
       </div>
       <div className="bg-gray-200 text-gray-800">
@@ -40,7 +44,8 @@ export default function Home() {
         </h1>
       </div>
       <div className="">
-        <h1></h1>
+        <h1 className="text-2xl font-bold">Popular Search</h1>
+        <Link href="">Arts & Sports</Link>
       </div>
     </div>
   );
