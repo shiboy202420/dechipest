@@ -2,6 +2,9 @@ import Navbar from "./components/navbar";
 import Top from "./components/top";
 import imageData from "@/data/ImageData.json";
 import Link from "next/link";
+import Image from "next/image";
+import MultipleDropdowns from "./components/MultipleDropdowns";
+import PopularSearchSection from "./components/popularSearchSection";
 
 type ImageData = {
   id: number;
@@ -16,6 +19,7 @@ export default function Home() {
     <div className="">
       <Navbar />
       <Top />
+      
       <div className="mx-4 my-8 pt-4 pb-1 bg-white shadow-2xl rounded-lg">
         <h1 className="mb-6 mx-12">Brands:</h1>
         <div className="grid grid-cols-1">
@@ -42,11 +46,10 @@ export default function Home() {
             SAVE UP TO <span className="font-extrabold text-4xl">70% OFF!</span>
           </span>
         </h1>
-      </div>
-      <div className="">
-        <h1 className="text-2xl font-bold">Popular Search</h1>
-        <Link href="">Arts & Sports</Link>
-      </div>
+    </div>
+      <PopularSearchSection/>
+      <MultipleDropdowns/>
+            
     </div>
   );
 }
